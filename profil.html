@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - My Personal Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- Logo on the left -->
+        <div class="nav-brand">
+            <a href="index.html">
+                <div class="logo-container">
+                    <img src="asset/logo.jpg" class="logo">
+                </div>
+                <span class="logo-text">MyWebsite</span>
+            </a>
+        </div>
+        
+        <!-- Hamburger menu (hidden on desktop) -->
+        <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
+        
+        <!-- Navigation links on the right -->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="profil.html">Profil</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="section-header">
+        <h1 class="animate__animated animate__fadeInDown">My Profile</h1>
+        <p class="animate__animated animate__fadeInUp">Informatic Education | Hamzanwadi University</p>
+    </section>
+
+    <div class="container profile-container">
+        <aside class="profile-sidebar">
+            <img src="asset/profile.JPG" alt="profile" class="profile-image animate animate__fadeInleft">
+            <div class="profile-info">
+                <h2>Personal Information</h2>
+                <div class="info-item">
+                    <i class="fas fa-user"></i>
+                    <span>Ainul Lutfi</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-id-card"></i>
+                    <span>NIM: 230305021</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>INformatic Education</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-university"></i>
+                    <span>Hamzanwadi University</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>lutfiainul331@gmail.com</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+62 87731382648</span>
+                </div>
+                
+                <h2>Skills</h2>
+                <div class="skill-item">
+                    <h4>Web Development</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 50%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>Mobile Development</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 40%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>Database Management</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <h4>UI/UX Design</h4>
+                    <div class="skill-bar">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <main class="profile-main">
+            <section class="about-section">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-text">
+                    <p>Hi! I am Lutfi, an enthusiastic informatics education student at Hamzanwadi University. I am passionate about web and mobile application development, with a particular focus on creating easy-to-use and efficient solutions.</p>
+                    <p>Throughout my academic journey, I have worked on projects ranging from simple websites to complex database systems. I enjoy solving problems and am constantly learning new technologies to improve my skills.</p>
+                    <p>When I am not coding, you can find me participating in HMPS Informatics Education activities and I also often go hiking when I have a lot on my mind.</p>
+                </div>
+            </section>
+
+            <section class="education-section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h3>Hamzanwadi University</h3>
+                    <p><strong>Informatic Education</strong> | 2023 - Present</p>
+                    <p>Current GPA: 3.85/4.00</p>
+                    <p>Relevant Coursework: Web Development, Database Systems, Algorithms, Mobile App Development, Computer Networks</p>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2025 My Personal Website. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
